@@ -15,7 +15,6 @@ if __name__ == "__main__":
     try:
         with open(filename, "rt", encoding="utf-8") as file:
             rover = file_reader.get_file_coordinates(file)
-        print(rover)
         results = rover_execution.execute_rover_positions(rover)
 
         for rover_position in results:
